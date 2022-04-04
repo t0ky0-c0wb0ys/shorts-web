@@ -1,5 +1,11 @@
-import { Container, Divider, LoggedAreaContainer, Logo, LogoContainer } from "./style"
 import { FaArrowCircleRight } from 'react-icons/fa';
+import {
+  Container,
+  Divider,
+  LoggedAreaContainer,
+  Logo,
+  LogoContainer,
+} from './style';
 
 export default function Header() {
   return (
@@ -15,11 +21,11 @@ export default function Header() {
 
         <LoggedAreaContainer>
           <span>Go to videos</span>
-          <FaArrowCircleRight size={20}/>
+          <FaArrowCircleRight size={20} />
         </LoggedAreaContainer>
       </Container>
 
       <Divider />
     </>
-  )
+  );
 }

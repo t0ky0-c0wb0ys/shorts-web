@@ -29,11 +29,11 @@ export default function SignUp() {
             <div className="password-container">
               <div className="password-input">
                 <span>Password</span>
-                <Input />
+                <Input type="password" />
               </div>
               <div className="password-input">
                 <span>Confirm password</span>
-                <Input />
+                <Input type="password" />
               </div>
             </div>
 

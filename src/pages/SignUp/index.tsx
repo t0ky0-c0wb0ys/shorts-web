@@ -1,6 +1,10 @@
-import Header from "../../components/Header";
-import { AvatarSection, Button, Container, Content, Form, Title } from "./style";
+import Header from '../../components/Header';
 import AvatarImage from '../../assets/images/avatar.svg';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import {
+  AvatarSection, Container, Content, Form, Title,
+} from './style';
 
 export default function SignUp() {
   return (
@@ -17,31 +21,26 @@ export default function SignUp() {
           </AvatarSection>
 
           <Form>
-            <div className="input-container">
-              <span>E-mail</span>
-              <input type="text" />
-            </div>
-
-            <div className="input-container">
-              <span>Username</span>
-              <input type="text" />
-            </div>
+            <span>E-mail</span>
+            <Input />
+            <span>Username</span>
+            <Input />
 
             <div className="password-container">
-              <div>
+              <div className="password-input">
                 <span>Password</span>
-                <input type="text" />
+                <Input />
               </div>
-              <div>
+              <div className="password-input">
                 <span>Confirm password</span>
-                <input type="text" />
+                <Input />
               </div>
             </div>
 
-            <Button>Sign in</Button>
+            <Button type="submit">Sign in</Button>
           </Form>
         </Content>
       </Container>
     </>
-  )
+  );
 }

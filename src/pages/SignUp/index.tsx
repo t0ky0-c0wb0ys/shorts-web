@@ -23,6 +23,7 @@ export default function SignUp() {
           <Form>
             <span>E-mail</span>
             <Input />
+
             <span>Username</span>
             <Input />
 
@@ -37,7 +38,7 @@ export default function SignUp() {
               </div>
             </div>
 
-            <Button type="submit">Sign in</Button>
+            <Button type="submit">Sign up</Button>
           </Form>
         </Content>
       </Container>

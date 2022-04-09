@@ -5,7 +5,6 @@ import { theme } from '../../theme';
 const buttonColor = `${theme.colors.purple[800]}`;
 
 export const Container = styled.button`
-  margin-top: 40px;
   background: ${buttonColor};
   border-radius: 10px;
   border: 0;

@@ -22,7 +22,7 @@ export const Title = styled.h1`
   justify-content: center;
 `;
 
-const selectAvatarColor = `${theme.colors.cyan[900]}`;
+const selectAvatarColor = theme.colors.cyan[900];
 
 export const AvatarSection = styled.div`
   display: flex;
@@ -52,6 +52,10 @@ export const Form = styled.form`
 
   input {
     margin-bottom: 15px;
+  }
+
+  button {
+    margin-top: 30px;
   }
 
   .password-container {

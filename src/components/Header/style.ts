@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const Container = styled.header`
-  height: 130px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +24,8 @@ export const LogoContainer = styled.div`
 `;
 
 export const Logo = styled.div`
-  height: 57px;
-  width: 57px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   background: ${theme.colors.purple[800]};
 `;

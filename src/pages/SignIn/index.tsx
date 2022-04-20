@@ -26,7 +26,7 @@ export default function SignIn() {
           <Form>
             <div>
               <span>Username/E-mail</span>
-              <Input />
+              <Input type="text" />
             </div>
 
             <div>

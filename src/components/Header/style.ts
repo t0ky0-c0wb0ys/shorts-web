@@ -6,7 +6,12 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 43px 0px 43px;
+
+  position: fixed;
+  padding: 0px 20px;
+  width: 100%;
+
+  border-bottom: 2px solid ${theme.colors.gray[800]};
 `;
 
 export const LogoContainer = styled.div`

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const Container = styled.div`
-  margin-top: 35px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,9 +11,17 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   padding: 30px;
-  height: 80%;
   background: ${theme.colors.gray[900]};
   border-radius: 10px;
+
+  @media (max-width: 425px) {
+    height: 100vh;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 130px 10px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -47,7 +55,7 @@ export const ForgotPasswordLink = styled.a`
   justify-content: end;
   color: ${forgotPasswordColor};
   transition: color 0.3s;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 
   &:hover {
     color: ${shade(0.2, forgotPasswordColor)};
@@ -82,9 +90,7 @@ export const LoginSocialButton = styled.button`
   border: none;
   background: ${backgroundColor};
   padding: 10px;
-  transition: background 0.3s;
-  transition: color 0.3s;
-
+  transition: all 0.3s;
 
   &:hover {
     background: ${shade(0.2, backgroundColor)};
@@ -98,7 +104,16 @@ export const DontHaveAccountContainer = styled.div`
   margin: 40px 70px 0px 70px;
 
   span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 425px) {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 `;
 
@@ -108,7 +123,7 @@ export const SignUpLink = styled.a`
   color: ${signButtonColor};
   transition: color 0.3s;
   justify-content: space-between;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 
   &:hover {
     color: ${shade(0.2, signButtonColor)};

@@ -1,7 +1,7 @@
 import { FaGoogle, FaFacebook } from 'react-icons/fa';
-import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import Header from '../../components/Header';
 import {
   Container,
   Content,
@@ -38,8 +38,9 @@ export default function SignIn() {
 
             <Button type="submit">Sign in</Button>
 
-            <Divider />
           </Form>
+
+          <Divider />
 
           <LoginSocialContainer>
             <span>Or continue with</span>

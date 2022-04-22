@@ -7,7 +7,11 @@ export const Container = styled.input`
   color: ${theme.colors.txt};
 
   border-radius: 10px;
-  border: none;
+  border: 2px solid ${theme.colors.gray[700]};
   background: ${theme.colors.gray[700]};
   padding: 18px;
+
+  &:focus {
+    border: 2px solid ${theme.colors.purple[800]};
+  }
 `;

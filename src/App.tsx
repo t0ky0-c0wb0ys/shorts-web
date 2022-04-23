@@ -1,5 +1,14 @@
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import GlobalStyle from './style/global';
+
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <>
+      <SignIn />
+      <GlobalStyle />
+    </>
+  );
 }
 
 export default App;
